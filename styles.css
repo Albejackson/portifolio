@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth; /*para scroll suave*/
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+}
+
+/* códigos do menu horizontal */
+
+.hero-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('./Imagens/fundo\ 1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/*titulo principal*/
+h1 {
+    color: #fff;
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+/*navegação*/
+nav {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 700px;
+}
+
+li a{
+    font-size: 21px;
+    color: #fff;
+    cursor: pointer;
+}
+
+li a:hover {
+    color: #D870DB;
+}
+
+/* Setas de navegação */
+.arrows {
+    width: 60px;
+    height: 172px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #fff;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+}
+
+/* Animação das setas */
+@keyframes arrow {
+    0% {opacity: 0;}
+    40% {opacity: 1;}
+    80% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.arrows path.a1 {
+    animation-delay: -1s;
+}
+
+.arrows path.a2 {
+    animation-delay: -0.5s;
+}
+
+.arrows path.a3 {
+    animation-delay: 0;
+}
+
+.content-container {
+    min-height: 100vh;
+    padding-top: 50px;
+    background-image: url('./Imagens/fundo\ 4.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* códigos do meu perfil */
+
+
+.profile-container {
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./Imagens/fundo\ 2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-content {
+    min-height: 100vh;
+    width: 30%;
+    
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.profile-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #D870DB;
+}
+
+.name-text {
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.profile-text {
+    font-size: 17px;
+    text-align: center;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.profile-button {
+    background-color: #D870DB; /* Cor de fundo */
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    display: inline-block; /* Exibição inline */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    margin-top: 35px;
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+.profile-button:hover{
+    background-color: #c534ca;
+    box-shadow: 0 5px 15px rgba(51, 51, 51, 0.2);
+}
+
+.divider {
+    width: 100%;
+    border-top: .5px solid #bfbfbf;
+    margin: 20px 0;
+}
+
+.icons-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.icon-item {
+    width: 80px;
+    height: auto;
+}
+
+.profile-sinopse {
+    width: 100%;
+    max-width: 430px;
+    color: #fff;
+    font-size: 17px;
+    margin-left: 30px auto;
+    text-align: justify;
+}
+
+
+
+/* código das imagens do projeto */
+
+
+.project-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./Imagens/fundo\ 3.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 20px;
+}
+
+.project-content {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.position-container {
+    width: 100%;
+    display: flex;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.project-card {
+    width: 100%;
+    max-width: 730px;
+    height: 230px;
+    background-color: black;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card-reverse {
+    flex-direction: row-reverse;
+}
+
+.project-image {
+    width: 330px;
+    height: auto;
+    border-radius: 8px;
+    
+}
+
+.project-text {
+    color: white;
+    padding: 20px;
+    font-size: 17px;
+}
+
+
+/* código do formulário*/
+
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2c3e50;
+    width: 80vh;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #ecf0f1;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #bdc3c7;
+    font-size: 14px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    transition: border-color 0.3s;
+
+}
+
+textarea {
+    height: 200px;
+
+}
+
+button {
+    width: 100%;
+  border: none;
+  background: #3498db; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+

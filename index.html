@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albejackson Martins</title>
+    <link rel="icon" href="Imagens/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="hero-container">
+        <header id="home">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#perfil">Perfil</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Procurando um desenvolvedor FullStack?</h1>
+        <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
+    </div>
+
+
+    <div id="perfil" class="content-container">
+        <div class="profile-container">
+            <div class="profile-content">
+                <div class="profile-card">
+                    <img class="profile-image" src="./Imagens/minhafoto.jpg"/>
+                    <span class="name-text">Albejackson Martins</span>
+                    <span class="profile-text">
+                        Foco, disciplina e consistência.
+                        Vamos revolucionar o mercado de tecnologia juntos?
+                    </span>
+                    <a href="https://www.linkedin.com/feed/" target="_blank">
+                        <button class="profile-button">
+                            Conhecer linkad
+                        </button>
+                    </a>
+                    <div class="divider"></div>
+                    <div class="icons-container">
+                        <img class="icon-item" src="./Imagens/js.png"/>
+                        <img class="icon-item" src="./Imagens/node.png"/>
+                        <img class="icon-item" src="./Imagens/react.png"/>
+
+                    </div>
+                </div>
+            </div>
+            <p class="profile-sinopse">
+                Desenvolvedor Junior em FullStack com experiência nas
+                tecnologias, React, NodeJs, TypeScript e MariaDB.
+                Tenho 30 anos, sou formado em Análise e Desenvolvimento
+                de sistemas. Sempre busco me atualizar e aprender novas
+                tecnologias. Uma de minhas maiores qualidades é não 
+                desistir dos desafios. 
+            </p>
+        </div>
+    </div>
+
+    <div id="projetos" class="content-container">
+        <div class="project-container">
+            <div class="project-content">
+
+                <div class="position-container right">
+                    <div class="project-card card-reverse">
+                        <a href="https://youtube-ivory-two.vercel.app/" target="_blank"><image class="project-image image-reverse" src="./Imagens/Untitled.jpg" /></a>
+                        <p class="project-text">
+                            O projeto é uma cópia do youtube o layout. As tecnologias utilizadas foram 
+                            o React, NodeJs e MariaDB. As linguagens utilizadas foram CSS, 
+                            JavaScript e TypeScript. Com algumas funções de login e logout, e a lógica de 
+                            abrir o menu ao ser clicado. Também possui a ligação do banco de dados com o sistema,
+                            para adicionar videos, cadastrar clientes, pesquisar por usuários e autenticação de login.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="position-container left">
+                    <div class="project-card card-reverse">
+                        <a href="https://star-was.vercel.app/" target="_blank"><image class="project-image image-reverse" src="./Imagens/starwas.jpg" /></a>
+                        <p class="project-text">
+                            O projeto foi criado utilizando as linguagens CSS, HTML e JavaScript. Nele temos as imagens dos
+                            personagens StarWars gerado por uma Api, que graças ao JavaScript ele chama as imagens todas as 
+                            vezes que é clicado no botão "próximo". Ao ser clicado na imagem, um modal é acionado com todas
+                            as informações dos personagens, e ao ser cliado fora desse modal, o mesmo é fechado.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="position-container right">
+                    <div class="project-card">
+                        <a href="https://cardapio-sepia-zeta.vercel.app/" target="_blank"><image class="project-image" src="./Imagens/amburgueria.jpg" /></a>
+                        <p class="project-text">
+                            Esse projeto foi criado utilizando a tecnologia NodeJs. E as linguagens, JavaScript, CSS e HTML. O projeto é um cardápio online, onde o cliente
+                            poderá escolher seu produto, adicionar no carrinho e enviar para o Whatsapp da hamburgueria. Utilizei o JavaScript para criar a lógica do sistema,
+                            tornando possível para o cliente adicionar ao carrinho, abrir e fechar o modal (caixa do carrinho),
+                            deletar um item, adicionar outro item. 
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="contato" class="content-container">
+        <div class="form-container">
+
+            <div id="contato" class="content-container">
+                <div class="form-container">
+                    <form action="https://formspree.io/f/xwkgooga" method="POST">
+                        <label>
+                            Email:
+                            <input type="email" name="email">
+                        </label>
+                        <label>
+                            Name:
+                            <input type="name" name="name">
+                        </label>
+                        <label>
+                            Telefone:
+                            <input type="phone" name="phone">
+                        </label>
+                        <label>
+                            Mensagem:
+                            <textarea name="message"></textarea>
+                        </label>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
