@@ -343,6 +343,64 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 1200px) {
+    .project-content {
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .profile-content {
+        width: 80%;
+    }
+
+    .project-content {
+        grid-template-rows: 1fr;
+    }
+
+    .project-card {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .profile-content {
+        width: 90%;
+    }
+
+    .profile-card {
+        padding: 20px;
+    }
+
+    .project-card {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
 
 
