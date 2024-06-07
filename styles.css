@@ -370,6 +370,23 @@ button:hover {
     .project-image {
         width: 100%;
     }
+
+    /* Adicionando a centralização e ordenação dos elementos */
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .profile-content, .profile-sinopse {
+        width: 90%;
+        max-width: 600px;
+        margin: 10px auto;
+    }
+
+    .profile-sinopse {
+        margin-top: 20px;
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -401,6 +418,25 @@ button:hover {
     form {
         width: 100%;
     }
+
+    /* Adicionando a centralização e ordenação dos elementos */
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .profile-content, .profile-sinopse {
+        width: 90%;
+        max-width: 600px;
+        margin: 10px auto;
+        align-items: center;
+    }
+
+    .profile-sinopse {
+        margin-top: 10px;
+        text-align: center;
+    }
+
 }
+
 
 
